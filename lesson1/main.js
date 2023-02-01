@@ -51,5 +51,8 @@ console.log(typeof c);
 */
 let firstN=prompt('Введіть ім`я');
 let midN=prompt('Введіть по-батькові');
-let age=prompt('Введіть вік');
-console.log(firstN,  midN, ',', age);
+let age=Number(prompt('Введіть вік'));
+let age1= parseInt(prompt('Введіть вагу'));
+let age2 = +(prompt("Введіть число"));
+console.log(firstN,  midN, ',', age, age1, age2);
+console.log(typeof age, typeof age1, typeof age2);
