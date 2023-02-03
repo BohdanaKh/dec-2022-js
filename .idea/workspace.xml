@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f8ae03d-0f24-4ebf-b1ca-d7e3ece5c37e" name="Changes" comment="add task2 lesson2">
+    <list default="true" id="4f8ae03d-0f24-4ebf-b1ca-d7e3ece5c37e" name="Changes" comment="add homework2 lesson2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2/main.js" afterDir="false" />
     </list>
@@ -60,7 +60,8 @@
       <workItem from="1675253931874" duration="4000" />
       <workItem from="1675256124730" duration="1587000" />
       <workItem from="1675283298049" duration="10338000" />
-      <workItem from="1675382403293" duration="5534000" />
+      <workItem from="1675382403293" duration="6274000" />
+      <workItem from="1675448465975" duration="826000" />
     </task>
     <task id="LOCAL-00001" summary="add task1 lesson1">
       <created>1675252967665</created>
@@ -97,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675295342743</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add homework2 lesson2">
+      <created>1675388459740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675388459740</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
     <MESSAGE value="add task1 lesson1" />
     <MESSAGE value="changed task1" />
     <MESSAGE value="add task2 lesson2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add task2 lesson2" />
+    <MESSAGE value="add homework2 lesson2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add homework2 lesson2" />
   </component>
 </project>
