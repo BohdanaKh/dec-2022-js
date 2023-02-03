@@ -1,6 +1,17 @@
 // Масиви та об'єкти:
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-let arr = [118.3, 'Paddington', null, [33,22,11], 'd', false, {}, '', 15, -9];
+let arr = [];
+arr[arr.length]=118.3;
+arr[arr.length]='Paddington';
+arr[arr.length]=null;
+arr[arr.length]=[33,22,11];
+arr[arr.length]='d';
+arr[arr.length]=false;
+arr[arr.length]= {};
+arr[arr.length]=' ';
+arr[arr.length]=15;
+arr[arr.length]=-9;
+
 console.log(arr[0]);
 console.log(arr[1]);
 console.log(arr[2]);
@@ -48,11 +59,9 @@ console.log(users[9].password);
 
 // Логічні розгалуження:
 //     - Є змінна х, якій ви надаєте довільне числове значення.
-let x = -3;
+let x = 1;
 //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
-if (x!==0) {
-    console.log('Вірно')
-}else {console.log('Невірно')}
+x!==0 ? console.log('Вірно'):console.log('Невірно');
 
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
@@ -103,7 +112,7 @@ switch (weekDay) {
 //         Потрібно знайти та вивести максимальне число з тих двох .
 //         Також потрібно врахувати коли введені рівні числа.
 let a=8;
-let b=8;
+let b=3;
 if (a>b){
     console.log('a is max');
 }else if (a===b) {
@@ -113,4 +122,38 @@ if (a>b){
 }
 
 // - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
-//     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+//     за допомоги  oператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+let y=NaN;
+if (y===undefined || y=== null ||y===''|| y===false||y===0|| isNaN(y)) {
+        y = 'default';
+}
+console.log(y);
+
+// - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
+if ((coursesAndDurationArray[0].monthDuration)>5) {
+    console.log('Super');
+}
+if ((coursesAndDurationArray[1].monthDuration)>5) {
+    console.log('Super');
+}
+if ((coursesAndDurationArray[2].monthDuration)>5) {
+    console.log('Super');
+}
+if ((coursesAndDurationArray[3].monthDuration)>5) {
+    console.log('Super');
+}
+if ((coursesAndDurationArray[4].monthDuration)>5) {
+    console.log('Super');
+}
+if ((coursesAndDurationArray[5].monthDuration)>5) {
+    console.log('Super');
+}
