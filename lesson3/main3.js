@@ -106,13 +106,13 @@ let users = [
 // за допомоги циклу вивести:
 //     - користувачів зі статусом true
 for (let user of users){
-    if (user.status === true){
+    if (user.status){
         console.log(user)
     }
 }
 // - користувачів зі статусом false
 for (let user of users){
-    if (user.status === false){
+    if (!user.status){
         console.log(user)
     }
 }
