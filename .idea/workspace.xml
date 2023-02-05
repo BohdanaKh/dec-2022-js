@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f8ae03d-0f24-4ebf-b1ca-d7e3ece5c37e" name="Changes" comment="add homework2 lesson2">
+    <list default="true" id="4f8ae03d-0f24-4ebf-b1ca-d7e3ece5c37e" name="Changes" comment="changed homework2 lesson2">
+      <change afterPath="$PROJECT_DIR$/lesson3/index3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/main3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -48,6 +49,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="index3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dec-2022-js/lesson3/index3.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index3.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +72,9 @@
       <workItem from="1675256124730" duration="1587000" />
       <workItem from="1675283298049" duration="10338000" />
       <workItem from="1675382403293" duration="6274000" />
-      <workItem from="1675448465975" duration="826000" />
+      <workItem from="1675448465975" duration="1028000" />
+      <workItem from="1675453428782" duration="6000" />
+      <workItem from="1675542813086" duration="11912000" />
     </task>
     <task id="LOCAL-00001" summary="add task1 lesson1">
       <created>1675252967665</created>
@@ -105,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675388459740</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed homework2 lesson2">
+      <created>1675449461129</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675449461129</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +147,7 @@
     <MESSAGE value="changed task1" />
     <MESSAGE value="add task2 lesson2" />
     <MESSAGE value="add homework2 lesson2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homework2 lesson2" />
+    <MESSAGE value="changed homework2 lesson2" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed homework2 lesson2" />
   </component>
 </project>
