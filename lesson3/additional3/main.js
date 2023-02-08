@@ -5,7 +5,6 @@ let emptyArrEven=[];
 let i=0;
 for(let n=0;n<100; n++) {
     n % 2 === 0 ? emptyArrEven[i] = n : i++;
-
 }
     console.log(emptyArrEven);
 
@@ -15,15 +14,40 @@ let emptyArrOdd=[];
 let j=0;
 for(let m=1;m<100; m++) {
     m % 2 !== 0 ? emptyArrOdd[j] = m : j++;
-
 }
 console.log(emptyArrOdd);
 
 //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+let array=[];
+for (let i=0; i<20; i++){
+    array[i]=Math.floor(Math.random()*100);
+}
+console.log(array);
 // d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
+let array3=[];
+for (let i=0; i<20; i++){
+    array3[i]=Math.floor(Math.random()*(732-8+1))+8;
+}
+console.log(array3);
 // 2. Вивести за допомогою console.log кожен третій елемен
+for (let i=0; i<array3.length; i+=3){
+    console.log(array3[i])
+}
 // 3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
+for (let i=0; i<array3.length; i+=3){
+    if (array3[i]%2===0){
+    console.log(array3[i])
+    }
+}
 // 4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
+let arrayNew=[];
+for (let i=0; i<array3.length; i+=3){
+    if (array3[i]%2===0){
+        console.log(array3[i]);
+        arrayNew[i]=array3[i];
+    }
+}
+console.log(arrayNew);
 // 5. Вивести кожен елемент масиву, сусід справа якого є парним
 // EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
 // 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
