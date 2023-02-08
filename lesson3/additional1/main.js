@@ -149,19 +149,29 @@
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 // for (c=1; c<=100; c++){
 //     console.log('krok:', c);
-//     document.write(`${' krok:'} ${c} `);
+//     document.write(`${' krok:'} ${c} <br>`);
 // }
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 // for (c=0; c<=100; c+=2){
 //     console.log('krok:', c);
-//     document.write(`${' krok:'} ${c} `);
+//     document.write(`${' krok:'} ${c} <br>`);
 // }
 
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+// for (c=0; c<=100; c++){
+//     if (c%2===0){
+//     console.log('krok:', c);
+//     document.write(`${' krok:'} ${c }  <br>`);
+//     }
+// }
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-//
-//
-//
+// for (c=0; c<=100; c++){
+//     if (c%2!==0){
+//         console.log('krok:', c);
+//         document.write(`${' krok:'} ${c }  <br>`);
+//     }
+// }
+
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 // -знайти наібльшу книжку.
 // - знайти книжку/ки з найбільшою кількістю жанрів
