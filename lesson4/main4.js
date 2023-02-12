@@ -43,8 +43,7 @@ newList(3,'Hello');
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 function arrayPrimitives(array) {
     document.write(`<ul>`);
-    for (let i = 0; i < array.length; i++) {
-        const arrayElement = array[i];
+    for (const arrayElement of array) {
         document.write(`<li> ${arrayElement} </li>`);
     }
     document.write(` </ul>`);
@@ -66,7 +65,6 @@ let participants=[
     {id:5, name: 'max', age: 30}
 ];
 arrayOfUsers(participants);
-
 // - створити функцію яка повертає найменьше число з масиву
 let nums=[-88,-470,-52,2,6,458,0];
 function minOfNumbers(array){
