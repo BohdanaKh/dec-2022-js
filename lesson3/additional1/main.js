@@ -176,8 +176,48 @@ for (c=0; c<=100; c++){
 }
 
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+let arrayOfBooks=[
+{title:'WTR111', pageCount:133, genre:['detective', 'horor'], authors:[{name:'A', age:58}, {name:'L', age:54}]},
+{title:'WTR2', pageCount: 233, genre: ['science'], authors:[{name:'N', age:22}, {name:'P', age:34},{name:'H', age:55}]},
+{title:'WTR3333', pageCount:33, genre:['journal', 'science', 'music', 'games'], authors:[{name:'C', age:41}]}
+    ];
+
 // -знайти наібльшу книжку.
-// - знайти книжку/ки з найбільшою кількістю жанрів
+let max=arrayOfBooks[0].pageCount;
+for (let j = 1; j < arrayOfBooks.length; j++) {
+    if (arrayOfBooks[j].pageCount > max) {
+        max = arrayOfBooks[j].pageCount;
+        console.log(arrayOfBooks[j]);
+    }
+}
+//
+// // - знайти книжку/ки з найбільшою кількістю жанрів
+let maxGenres=arrayOfBooks[0].genre.length;
+for (let p = 1; p < arrayOfBooks.length; p++) {
+    if (arrayOfBooks[p].genre.length > maxGenres) {
+        maxGenres = arrayOfBooks[p].genre.length;
+        console.log(arrayOfBooks[p]);
+    }
+}
+
 // - знайти книжку/ки з найдовшою назвою
+let longestTitle=arrayOfBooks[0].title.length;
+for (let j = 0; j < arrayOfBooks.length; j++) {
+    if (arrayOfBooks[j].title.length > longestTitle) {
+        longestTitle = arrayOfBooks[j].title.length;
+        console.log(arrayOfBooks[j]);
+    }
+}
+
 // - знайти книжку/ки які писали 2 автори
+for (let j = 0; j < arrayOfBooks.length; j++) {
+    if (arrayOfBooks[j].authors.length === 2) {
+        console.log(arrayOfBooks[j]);
+    }
+}
 // - знайти книжку/ки які писав 1 автор
+for (let j = 0; j < arrayOfBooks.length; j++) {
+    if (arrayOfBooks[j].authors.length === 1) {
+        console.log(arrayOfBooks[j]);
+    }
+}
