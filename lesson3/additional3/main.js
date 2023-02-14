@@ -43,8 +43,8 @@ for (let i=0; i<array3.length; i+=3){
 let arrayNew=[];
 for (let i=0; i<array3.length; i+=3){
     if (array3[i]%2===0){
-        console.log(array3[i]);
-        arrayNew[i]=array3[i];
+        // console.log(array3[i]);
+        arrayNew[arrayNew.length]=array3[i];
     }
 }
 console.log(arrayNew);
@@ -55,7 +55,7 @@ let nums=[1, 2, 3, 5, 7, 9, 56, 8, 67];
 let nums3=[];
 for (let k = 0; k < nums.length; k++) {
     if (nums[k+1]%2===0){
-    nums3[k] = nums[k];
+    nums3[nums3.length] = nums[k];
 }
 }
 console.log(nums3);
