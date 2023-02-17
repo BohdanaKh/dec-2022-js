@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e819a1d-63a3-4777-905c-712866eefa1b" name="Changes" comment="add homework 5">
+    <list default="true" id="0e819a1d-63a3-4777-905c-712866eefa1b" name="Changes" comment="add homework 5 additional">
+      <change afterPath="$PROJECT_DIR$/lesson6/index6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6/main6.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson5/additional5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/additional5/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,8 @@
       <workItem from="1676067912547" duration="60000" />
       <workItem from="1676230019505" duration="9404000" />
       <workItem from="1676411694100" duration="6106000" />
-      <workItem from="1676480405693" duration="21745000" />
+      <workItem from="1676480405693" duration="22158000" />
+      <workItem from="1676622327298" duration="24361000" />
     </task>
     <task id="LOCAL-00001" summary="add task1 lesson1">
       <created>1675252967665</created>
@@ -203,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676418820347</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add homework 5 additional">
+      <created>1676505760313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676505760313</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add homework 5 additional">
+      <created>1676624262731</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676624262731</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +249,7 @@
     <MESSAGE value="changes hw4" />
     <MESSAGE value="changes hw3" />
     <MESSAGE value="add homework 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homework 5" />
+    <MESSAGE value="add homework 5 additional" />
+    <option name="LAST_COMMIT_MESSAGE" value="add homework 5 additional" />
   </component>
 </project>
