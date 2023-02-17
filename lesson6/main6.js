@@ -318,21 +318,16 @@ let coursesArray = [
 ];
 // --написати пошук всіх об'єктів, в який в modules є sass
 
-let sass = coursesArray.filter(course => {
-    for (const item of course.modules) {
-        if (item==='sass') {
-            return course;
-        }
-    }
-});
+let sass = coursesArray.filter(course => course.modules.includes('sass'));
+// {
+    // for (const item of course.modules) {
+    //     if (item==='sass') {
+    //         return course;
+    //     }
+    // }
+// });
 console.log(sass);
 
 // --написати пошук всіх об'єктів, в який в modules є docker
-let docker = coursesArray.filter(course => {
-    for (const item of course.modules) {
-       if (item==='docker') {
-           return course;
-       }
-    }
-});
+let docker = coursesArray.filter(course => course.modules.includes('docker'));
 console.log(docker);
