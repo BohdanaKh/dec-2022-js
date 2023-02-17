@@ -91,29 +91,19 @@ replacer([9,8,0,4],2);
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 //  [0,0,1,0]   => [1,0,0,0]
-// let displacer = (array) => {
-//    let l=array.length;
-//    for (let i=0; i<l; i++) {
-//       let item = array[i];
-//       if (item !== 0) {
-//          array[i]=item;
-      // } else {
-      //    array[array.length] = item;
-      //    l--;
-
-   //
-   // // if (item !== 0) {
-   // //    j++;
-   // // }
-   // // else{
-   // //    array.length=array.length-1;
-   // //    array[array.length] = item;
-   // //
-   // //    l--;
-   //
-   // }
-
-// console.log(array);
-// }
-// displacer([2,0,0,2,0,4]);
+let displacer = (array) => {
+   let arr=[];
+   for (const item of array) {
+      if (item !== 0) {
+         arr[arr.length] = item;
+      }
+   }
+   for (const item of array) {
+      if (item === 0) {
+         arr[arr.length] = item;
+      }
+   }
+console.log(arr);
+}
+displacer([0,0,1,2,0,0,2,0,4]);
 
