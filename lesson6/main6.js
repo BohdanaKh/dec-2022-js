@@ -209,9 +209,11 @@ console.log(red);
 let diamonds=cards.filter(card => card.cardSuit==='diamond');
 console.log(diamonds);
 // - всі трефи від 9 та більше
-let clubs=cards.filter(card => card.cardSuit==='clubs' && card.value !=='6'&& card.value !=='7'&& card.value !=='8');
+let clubs=cards
+    .filter(card => card.cardSuit==='clubs')
+    .slice(3); // card.value !=='6'&& card.value !=='7'&& card.value !=='8'
 console.log(clubs);
-//
+
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
 //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
