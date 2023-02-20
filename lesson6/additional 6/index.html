@@ -41,20 +41,24 @@
     document.write(`${toUp('fgfhdj')} <br>`);
 
     // - Дано список імен.
-        let n1 = 'Harry..Potter'
+    //     let n1 = 'Harry..Potter'
     // let n2 = 'Ron---Whisley'
-    // let n3 = 'Hermione__Granger'
+    let n3 = 'Hermione__Granger'
     // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
     // let n1 = 'Harry Potter'
     // let n2 = 'Ron Whisley'
     // let n3 = 'Hermione Granger'
     let validUser = (str) => {
-
-        return str.replaceAll('.', ' ');
-
-    }
-    console.log(validUser(n1));
-
+let validSt = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let nameUser = [];
+            for (let i = 0; i < str.length; i++) {
+                if (validSt.includes(str[i])) {
+                    nameUser.push(str[i]);
+                } else {
+                    nameUser.push(' ');}}
+        return nameUser.join('');
+}
+    console.log(validUser(n3));
 
     //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
    let randomArr=(c) => {
@@ -223,27 +227,23 @@ return s
     // -стоврити масив книжок (назва, кількість сторінок, автори , жанри).
     let arrayOfBooks=[
         {title:'WTR111', pageCount:133, genre:['detective', 'horor'], authors:[{name:'A', age:58}, {name:'L', age:54}]},
-        {title:'WTR2222222', pageCount:330, genre: ['science'], authors:[{name:'N', age:22}, {name:'P', age:34},{name:'H', age:55}]},
+        {title:'WTR2222222', pageCount:233, genre: ['science'], authors:[{name:'N', age:22}, {name:'P', age:34},{name:'H', age:55}]},
         {title:'WTR3333', pageCount:453, genre:['journal', 'science', 'music', 'games'], authors:[{name:'C', age:41}]},
-        {title:'WTR44', pageCount:433, genre:['detective', 'horor'], authors:[{name:'A', age:58}, {name:'L', age:54}]},
+        {title:'WTR44', pageCount:43, genre:['detective', 'horor'], authors:[{name:'A', age:58}, {name:'L', age:54}]},
     ];
     // -знайти наібльшу книжку.
-    let max = arrayOfBooks[0].pageCount;
-    function filter(array){
-        for (const item of array ) {
-            if (item.pageCount > max) {
-                max=item;
-            }
-        }
-        return max;
-    }
-    console.log(filter(arrayOfBooks));
+    arrayOfBooks.sort((a,b) =>{
+        return b.pageCount - a.pageCount;
+
+    });
+    console.log(arrayOfBooks[0]);
 
     // - знайти книжку/ки з найбільшою кількістю жанрів
-    let maxGenres =  arrayOfBooks[0].genre.length;
+    let maxGenres =  arrayOfBooks[0];
     function filter1(array) {
+
         for (const item of array) {
-            if (item.genre.length > maxGenres) {
+            if (item.genre.length > maxGenres.genre.length) {
                 maxGenres = item;
             }
         }
@@ -252,10 +252,10 @@ return s
         console.log(filter1(arrayOfBooks));
 
         // - знайти книжку/ки з найдовшою назвою
-    let longTitle = arrayOfBooks[0].title.length;
+    let longTitle = arrayOfBooks[0];
     function filter2(array){
         for (const item of array ) {
-            if (item.title.length > longTitle) {
+            if (item.title.length > longTitle.title.length) {
                 longTitle=item;
             }
         }
