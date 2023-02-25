@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  // - Створити клас або функцію конструктор, за допомоги якої можна створювати об'єкти наступного вигляду.
+  // Конструктор повинен приймати значення для кожної властивості, в т.ч і для властивостей внутрішніх об'єктів
+  //
+  // {
+  //   id: 1,
+  //           name: 'Leanne Graham',
+  //         username: 'Bret',
+  //         email: 'Sincere@april.biz',
+  //         address: {
+  //   street: 'Kulas Light',
+  //           suite: 'Apt. 556',
+  //           city: 'Gwenborough',
+  //           zipcode: '92998-3874',
+  //           geo: {
+  //     lat: '-37.3159',
+  //             lng: '81.1496'
+  //   }
+  // },
+  //   phone: '1-770-736-8031 x56442',
+  //           website: 'hildegard.org',
+  //         company: {
+  //   name: 'Romaguera-Crona',
+  //           catchPhrase: 'Multi-layered client-server neural-net',
+  //           bs: 'harness real-time e-markets'
+  // }
+  // }
+  //
+  function User(id,name,username,email,street,suite,city,zipcode,lat,lng,phone,website,nameOf,catchPhrase,bs){
+    this.id=id;
+    this.name=name;
+    this.username=username;
+    this.email=email;
+    this.address={street:street,suite:suite,city:city,zipcode:zipcode,geo:{lat:lat,lng:lng}};
+    this.phone=phone;
+    this.website=website;
+    this.company={nameOf:nameOf,catchPhrase:catchPhrase,bs:bs};
+  }
+  let user1 = new User(1,'Leanne Graham','Bret','Sincere@april.biz','Kulas Light','Apt.556','Gwenborough','92998-3874','-37.3159','81.1496','1-770-736-8031 x56442','hildegard.org','Romaguera-Crona','Multi-layered client-server neural-net','harness real-time e-markets');
+  console.log(user1);
+  // -  Створити функцію конструктор / клас  який описує об'єкт тегу
+  // Поля :
+  //         -назва тегу ()
+  // - опис його дій
+  // - масив з атрибутами (2-3 атрибути максимум)
+  // Кожен атрибут описати як окремий який буде містити
+  // -назву атрибуту
+  // -опис дії атрибуту
+  // інформацію брати з htmlbook.ru
+  //
+  // Таким чином описати теги
+  // -a
+  // -div
+  // -h1
+  // -span
+  // -input
+  // -form
+  // -option
+  // -select
+  // Приклад результуючого об'єкту
+  // {
+  //   titleOfTag: 'area',
+  //           action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
+  //         attrs: [
+  //   {titleOfAttr: 'accesskey', actionOfAttr: 'Переход к области с помощью комбинации клавиш'},
+  //   {/*some props and values*/},
+  //   {/*...*/},
+  //   {/*...*/},
+  // ]
+  //
+  // }
+class Tag{
+    constructor(titleOfTag,action, ...attrs) {
+        this.titleOfTag=titleOfTag;
+        this.action=action;
+        this.attrs=attrs;
+    }
+}
+class Attribute{
+    constructor(titleOfAttr,actionOfAttr) {
+        this.titleOfAttr=titleOfAttr;
+        this.actionOfAttr=actionOfAttr
+    }
+  }
+    let tag1 = new Tag('a','defines a hyperlink',new Attribute('"href"','indicates the link\'s destination'),new Attribute('"target"','specifies where to open the linked document'));
+  console.log(tag1);
+    let tag2 = new Tag('div','defines a division or a section in an HTML document', new Attribute('"style"','add styles to an element'), new Attribute('"id"','is used to specify a unique id for an HTML element'),new Attribute('"class"','specify a class for an HTML element'));
+  console.log(tag2);
+    let tag3 = new Tag('h1','defines the most important heading', new Attribute('"style"','add styles to an element'));
+  console.log(tag3);
+    let tag4 = new Tag('span','is an inline container used to mark up a part of a text, or a part of a document', new Attribute('"style"','add styles to an element'), new Attribute('"class"','specify a class for an HTML element'));
+  console.log(tag4);
+    let tag5 = new Tag('input','element can be displayed in several ways, depending on the \'type\' attribute',new Attribute('"type"','defines an input field'), new Attribute('"label"','defines a label for several form elements') );
+    let tag6 = new Tag ('form','element is used to create an HTML form for user input', new Attribute('"action"','defines the action to be performed when the form is submitted'),new Attribute('"method"','specifies the HTTP method to be used when submitting the form data'),new Attribute('"target"','specifies where to display the response that is received after submitting the form'));
+    let tag7 = new Tag('option','defines an option in a select list', new Attribute('"value"','indicates what is sent to the server on form submission'), new Attribute('"disabled"','specifies that an option should be disabled'));
+    let tag8 = new Tag('select','element is used to create a drop-down list', new Attribute('"name"', 'attribute is needed to reference the form data after the form is submitted'), new Attribute('"id"', ' attribute is needed to associate the drop-down list with a label'));
+  console.log(tag5, tag6, tag7, tag8);
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
