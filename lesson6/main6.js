@@ -6,6 +6,7 @@ let str1='lorem ipsum';
 console.log(str1.length);
 let str2='javascript is cool';
 console.log(str2.length);
+// ['hello world', 'lorem ipsum', 'javascript is cool'].forEach((item) => console.log(item.length));
 
 // - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
@@ -15,6 +16,7 @@ let str4='lorem ipsum';
 console.log(str4.toUpperCase());
 let str5='javascript is cool';
 console.log(str5.toUpperCase());
+// console.log(['hello world', 'lorem ipsum', 'javascript is cool'].map((item) => item.toUpperCase()));
 
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
@@ -24,12 +26,14 @@ let str7='LOREM IPSUM';
 console.log(str7.toLowerCase());
 let str8='JAVASCRIPT IS COOL';
 console.log(str8.toLowerCase());
+// console.log(['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'].map((item) => item.toLowerCase()));
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 let str9= ' dirty string   ';
 let str91=str9.trim();
 console.log(str91);
-//
+// console.log(str.split(' ').filter((w) => w.length).join(' '));
+
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
     let str10 = 'Ревуть воли як ясла повні';
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
@@ -55,6 +59,12 @@ if (direction === 'descending') {
 }
 });
 return array;
+        // switch (order) {
+//     case 'ascending':
+//       return arr.sort((a, b) => a - b);
+//     case 'descending':
+//       return arr.sort((a, b) => b - a);
+//   }
 }
 console.log(sortNums(numsS, 'ascending')); // [3,11,21]
 console.log(sortNums(numsS, 'descending'));// [21,11,3]
@@ -86,115 +96,42 @@ console.log(mapped);
 // =========================
 //     описати колоду карт (від 6 до туза без джокерів)
 let cards = [
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: '6', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: '7', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: '8', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: '9', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: '10', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: 'jack', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: 'queen', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: 'king', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'spade', // 'spade', 'diamond','heart', 'clubs'
-        value: 'ace', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: '6', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: '7', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: '8', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: '9', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: '10', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: 'jack', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: 'queen', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: 'king', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'diamond', // 'spade', 'diamond','heart', 'clubs'
-        value: 'ace', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: '6', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: '7', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: '8', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: '9', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: '10', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: 'jack', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: 'queen', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: 'king', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'heart', // 'spade', 'diamond','heart', 'clubs'
-        value: 'ace', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'red'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: '6', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: '7', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: '8', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: '9', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: '10', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: 'jack', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: 'queen', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: 'king', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-    {cardSuit: 'clubs', // 'spade', 'diamond','heart', 'clubs'
-        value: 'ace', // '6'-'10', 'ace','jack','queen','king','joker'
-        color: 'black'},
-
+    {cardSuit: 'spade', value: '6', color: 'black'},
+    {cardSuit: 'spade', value: '7', color: 'black'},
+    {cardSuit: 'spade', value: '8', color: 'black'},
+    {cardSuit: 'spade', value: '9', color: 'black'},
+    {cardSuit: 'spade', value: '10', color: 'black'},
+    {cardSuit: 'spade', value: 'jack', color: 'black'},
+    {cardSuit: 'spade', value: 'queen', color: 'black'},
+    {cardSuit: 'spade', value: 'king', color: 'black'},
+    {cardSuit: 'spade', value: 'ace', color: 'black'},
+    {cardSuit: 'diamond', value: '6', color: 'red'},
+    {cardSuit: 'diamond', value: '7', color: 'red'},
+    {cardSuit: 'diamond', value: '8', color: 'red'},
+    {cardSuit: 'diamond', value: '9', color: 'red'},
+    {cardSuit: 'diamond', value: '10', color: 'red'},
+    {cardSuit: 'diamond', value: 'jack', color: 'red'},
+    {cardSuit: 'diamond', value: 'queen', color: 'red'},
+    {cardSuit: 'diamond', value: 'king', color: 'red'},
+    {cardSuit: 'diamond', value: 'ace', color: 'red'},
+    {cardSuit: 'heart', value: '6', color: 'red'},
+    {cardSuit: 'heart', value: '7', color: 'red'},
+    {cardSuit: 'heart', value: '8', color: 'red'},
+    {cardSuit: 'heart', value: '9', color: 'red'},
+    {cardSuit: 'heart', value: '10', color: 'red'},
+    {cardSuit: 'heart', value: 'jack', color: 'red'},
+    {cardSuit: 'heart', value: 'queen', color: 'red'},
+    {cardSuit: 'heart', value: 'king', color: 'red'},
+    {cardSuit: 'heart', value: 'ace', color: 'red'},
+    {cardSuit: 'clubs', value: '6',  color: 'black'},
+    {cardSuit: 'clubs', value: '7',  color: 'black'},
+    {cardSuit: 'clubs', value: '8',  color: 'black'},
+    {cardSuit: 'clubs', value: '9',  color: 'black'},
+    {cardSuit: 'clubs', value: '10',  color: 'black'},
+    {cardSuit: 'clubs', value: 'jack',  color: 'black'},
+    {cardSuit: 'clubs', value: 'queen',  color: 'black'},
+    {cardSuit: 'clubs', value: 'king',  color: 'black'},
+    {cardSuit: 'clubs', value: 'ace',  color: 'black'}
 ]
 // - знайти піковий туз
 let find = cards.find(card => card.value==='ace' && card.cardSuit==='spade');
@@ -210,8 +147,8 @@ let diamonds=cards.filter(card => card.cardSuit==='diamond');
 console.log(diamonds);
 // - всі трефи від 9 та більше
 let clubs=cards
-    .filter(card => card.cardSuit==='clubs')
-    .slice(3); // card.value !=='6'&& card.value !=='7'&& card.value !=='8'
+    .filter(card => card.cardSuit === 'clubs' && ['9', '10', 'ace', 'jack', 'queen', 'king'].includes(card.value))
+    // .slice(3); // card.value !=='6'&& card.value !=='7'&& card.value !=='8'
 console.log(clubs);
 
 // {
@@ -245,6 +182,31 @@ let reducer = cards.reduce((accumulator, card) => {
     }
     return accumulator;
 }, {spades:[], diamonds:[], hearts:[], clubs:[]});
+
+// const box = cards.reduce((acc, current) => {
+// acc[current.cardSuit].push(current);
+//   return acc;
+// }, { spade:[], diamond:[], heart:[], clubs:[] });
+// console.log(box)
+
+// V2
+// const box = cards.reduce((acc, current) => {
+//   switch (current.cardSuit) {
+//     case 'spade':
+//       acc.spades.push(current);
+//       break;
+//     case 'diamond':
+//       acc.diamonds.push(current);
+//       break;
+//     case 'heart':
+//       acc.hearts.push(current);
+//       break;
+//     case 'clubs':
+//       acc.clubs.push(current);
+//       break;
+//   }
+//   return acc;
+// }, { spades:[], diamonds:[], hearts:[], clubs:[] });
 console.log(reducer);
 
 // =========================
