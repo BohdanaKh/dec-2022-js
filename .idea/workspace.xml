@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e819a1d-63a3-4777-905c-712866eefa1b" name="Changes" comment="add additional 6">
+    <list default="true" id="0e819a1d-63a3-4777-905c-712866eefa1b" name="Changes" comment="changes">
+      <change afterPath="$PROJECT_DIR$/lesson 9/index 9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 9/main9.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson6/additional 6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/additional 6/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -96,7 +97,11 @@
       <workItem from="1676651038287" duration="270000" />
       <workItem from="1676798938933" duration="9753000" />
       <workItem from="1676814659607" duration="28928000" />
-      <workItem from="1676881834518" duration="6524000" />
+      <workItem from="1676881834518" duration="6572000" />
+      <workItem from="1677329780220" duration="23911000" />
+      <workItem from="1677358055726" duration="1012000" />
+      <workItem from="1677420920103" duration="3573000" />
+      <workItem from="1677619877095" duration="15807000" />
     </task>
     <task id="LOCAL-00001" summary="add task1 lesson1">
       <created>1675252967665</created>
@@ -252,7 +257,35 @@
       <option name="project" value="LOCAL" />
       <updated>1676845408212</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add additional 6">
+      <created>1676888453570</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1676888453570</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add homework 8">
+      <created>1677357937717</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677357937717</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add homework 8">
+      <created>1677359000462</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1677359000462</updated>
+    </task>
+    <task id="LOCAL-00026" summary="changes">
+      <created>1677425021201</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1677425021201</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +308,6 @@
     <MESSAGE value="add task2 lesson2" />
     <MESSAGE value="add homework2 lesson2" />
     <MESSAGE value="changed homework2 lesson2" />
-    <MESSAGE value="changes" />
     <MESSAGE value="add additional homework" />
     <MESSAGE value="changed additional homework" />
     <MESSAGE value="add homework4" />
@@ -286,6 +318,8 @@
     <MESSAGE value="add homework 6" />
     <MESSAGE value="changed homework 6" />
     <MESSAGE value="add additional 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="add additional 6" />
+    <MESSAGE value="add homework 8" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>
