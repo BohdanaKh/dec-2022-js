@@ -312,45 +312,45 @@ button1.onclick = function (){
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
-let rows = document.createElement('input');
-rows.setAttribute('type','number');
-rows.setAttribute('id','setRows');
-rows.setAttribute('label','Кількість рядків')
-
-let cells = document.createElement('input');
-cells.setAttribute('type','number');
-cells.setAttribute('id','setCells');
-
-let content = document.createElement('input');
-content.setAttribute('type','text');
-content.setAttribute('id','setContent');
-
-let button2 = document.createElement('button');
-button2.style.background='yellow';
-button2.style.width = '100px';
-button2.style.height = '40px';
-button2.textContent = 'Build';
-
-document.body.append(rows,cells,content,button2);
+// let rows = document.createElement('input');
+// rows.setAttribute('type','number');
+// rows.setAttribute('id','setRows');
+// rows.setAttribute('label','Кількість рядків')
 //
-button2.onclick = function (){
-  let table =   document.createElement('table');
-    let numsR = document.getElementById('setRows').value;
-    for (let i=0; i<numsR; i++ ) {
-        let nth = document.createElement('tr');
-        nth.style.border ='1px solid black';
-        nth.style.background = 'grey';
-        let numsC = document.getElementById('setCells').value;
-        for (let l=0; l<numsC; l++) {
-          let jth =  document.createElement('td');
-            jth.style.border ='1px solid black';
-            jth.style.width = '100px';
-            jth.style.height = '80px';
-            jth.innerText = document.getElementById('setContent').value;
-            jth.style.textAlign = 'center';
-            nth.append(jth);
-        }
-        table.append(nth);
-    }
-    document.body.appendChild(table);
-    }
+// let cells = document.createElement('input');
+// cells.setAttribute('type','number');
+// cells.setAttribute('id','setCells');
+//
+// let content = document.createElement('input');
+// content.setAttribute('type','text');
+// content.setAttribute('id','setContent');
+//
+// let button2 = document.createElement('button');
+// button2.style.background='yellow';
+// button2.style.width = '100px';
+// button2.style.height = '40px';
+// button2.textContent = 'Build';
+//
+// document.body.append(rows,cells,content,button2);
+// //
+// button2.onclick = function (){
+//   let table =   document.createElement('table');
+//     let numsR = document.getElementById('setRows').value;
+//     for (let i=0; i<numsR; i++ ) {
+//         let nth = document.createElement('tr');
+//         nth.style.border ='1px solid black';
+//         nth.style.background = 'grey';
+//         let numsC = document.getElementById('setCells').value;
+//         for (let l=0; l<numsC; l++) {
+//           let jth =  document.createElement('td');
+//             jth.style.border ='1px solid black';
+//             jth.style.width = '100px';
+//             jth.style.height = '80px';
+//             jth.innerText = document.getElementById('setContent').value;
+//             jth.style.textAlign = 'center';
+//             nth.append(jth);
+//         }
+//         table.append(nth);
+//     }
+//     document.body.appendChild(table);
+//     }
