@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e819a1d-63a3-4777-905c-712866eefa1b" name="Changes" comment="add homework 10">
-      <change afterPath="$PROJECT_DIR$/mini-project/details/main_details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/details/main_post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/details/post-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/details/user-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-project/style.css" afterDir="false" />
+    <list default="true" id="0e819a1d-63a3-4777-905c-712866eefa1b" name="Changes" comment="add mini project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 10/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 10/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 10/sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 10/sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 9/main9.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 9/main9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/details/main_details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/details/main_details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/details/main_post.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/details/main_post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/details/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/details/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/details/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/details/user-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,8 @@
       <workItem from="1678031359953" duration="23865000" />
       <workItem from="1678096983788" duration="5737000" />
       <workItem from="1678623349674" duration="50670000" />
-      <workItem from="1678687453324" duration="9859000" />
+      <workItem from="1678687453324" duration="9957000" />
+      <workItem from="1679086151841" duration="25194000" />
     </task>
     <task id="LOCAL-00001" summary="add task1 lesson1">
       <created>1675252967665</created>
@@ -330,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678102736252</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add mini project">
+      <created>1678697473625</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1678697473625</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +371,7 @@
     <MESSAGE value="changes" />
     <MESSAGE value="add homework 9" />
     <MESSAGE value="add homework 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homework 10" />
+    <MESSAGE value="add mini project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mini project" />
   </component>
 </project>

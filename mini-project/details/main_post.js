@@ -6,55 +6,54 @@
 
 let url = new URL(location.href);
 let data = url.searchParams.get('data');
-let postDetails = JSON.parse(data);
-let block2 = document.createElement('div');
-block2.setAttribute('class','container');
-document.body.appendChild(block2);
+let post = JSON.parse(data);
+
+let postsContainer = document.createElement('div');
+postsContainer.setAttribute('class','container');
+document.body.appendChild(postsContainer);
 
 
-let div = document.createElement('div');
-div.setAttribute('class','bigBlock');
-let title = document.createElement('div')
-div.setAttribute('class','target');
-let id = document.createElement('div')
-div.setAttribute('class','target');
-let textBody = document.createElement('div')
-div.setAttribute('class','target');
-title.innerText = `Title ${postDetails.title}`;
-id.innerText = `Post ID: ${postDetails.id}  User ID: ${postDetails.userId}`;
-textBody.innerText = `${postDetails.body}`;
-div.append(title,id,textBody);
-block2.appendChild(div);
+let postInfo = document.createElement('div');
+postInfo.setAttribute('class','bigBlock');
+let title = document.createElement('div');
+title.setAttribute('id','posttarget1');
+let id = document.createElement('div');
+id.setAttribute('id','posttarget2');
+let textBody = document.createElement('div');
+textBody.setAttribute('id','posttarget3');
+title.innerText = `Title ${post.title}`;
+id.innerText = `Post ID: ${post.id}  User ID: ${post.userId}`;
+textBody.innerText = `${post.body}`;
+postInfo.append(title,id,textBody);
+postsContainer.appendChild(postInfo);
 
-let postId = postDetails.id;
+
+
+let postId = post.id;
 let url3 = new URL('https://jsonplaceholder.typicode.com/posts/POST_ID/comments');
-
 let url4 = url3.toString().replace('POST_ID', postId);
 let newUrl1 = new URL(url4);
 
-
-let myButton = document.createElement('button');
-myButton.setAttribute('class','button');
-myButton.innerText = 'Show comments';
-block2.append(myButton);
-
-function show() {
-       fetch(newUrl1)
-           .then(value => value.json())
-           .then(comments => {
-               let bigDiv = document.createElement('div');
-               bigDiv.setAttribute('class','container');
-               for (const comment of comments) {
-                let d1 = document.createElement('div');
-                d1.setAttribute('class','itemCom')
-                   for (const key in comment) {
-                       d1.innerText +=`${key}: ${comment[key]}   `+ ' ';
-                   }
-                bigDiv.append(d1);
-               }
-               block2.appendChild(bigDiv);
+let commentsDiv = document.createElement('div');
+commentsDiv.setAttribute('class','commentsDiv');
+fetch(newUrl1)
+    .then(value => value.json())
+    .then(comments => {
+        for (const comment of comments) {
+            let d1 = document.createElement('div');
+            d1.setAttribute('class', 'itemCom')
+            for (const key in comment) {
+                let dIn = document.createElement('div');
+                dIn.setAttribute('class','comment');
+                dIn.innerText = `${key}: ${comment[key]}`;
+                d1.append(dIn);
+            }
+            commentsDiv.append(d1);
+        }
     })
-}
-myButton.addEventListener('click', show);
+postsContainer.appendChild(commentsDiv);
+
+
+
 
 

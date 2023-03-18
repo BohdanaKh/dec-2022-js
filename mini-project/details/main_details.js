@@ -9,29 +9,41 @@ let url = new URL(location.href);
 let json = url.searchParams.get('data');
 let user = JSON.parse(json);
 let container = document.createElement('div');
-container.setAttribute('class','container');
+container.setAttribute('class','userContainer');
 document.body.appendChild(container);
 builder(user);
-
 
 function builder(object) {
 
     for (let key in object) {
         let item = object[key];
-        let userInfo=[];
+        let userKey = document.createElement('div');
+        userKey.setAttribute('class', 'userItem')
+        let userInfo = document.createElement('div');
+        userInfo.setAttribute('class', 'userItem')
         if (typeof item !== "object") {
-            userInfo.push(`${key}: ${item}`, ' ');
-            container.append(userInfo);
+            userKey.innerText = `${key}:`;
+            userInfo.innerText = `${item}`;
+            container.append(userKey, userInfo);
 
         } else {
 
-            userInfo.push(`${key}:`);
-            container.append(userInfo);
-            builder(item);
+            userKey.innerText = `${key}:`;
+
+           for (let keyKey in item){
+               if (typeof item[keyKey] !== "object") {
+            userInfo.innerHTML += `${keyKey}: ${item[keyKey]}`+'<br>';
+                container.append(userKey, userInfo);
+            } else{
+                   userInfo.innerHTML += `${keyKey}:`+'<br>';
+                   for (const keyKeyKey in item[keyKey]) {
+                     userInfo.innerHTML += `${keyKeyKey}: ${item[keyKey][keyKeyKey]}`+'<br>';
+                     container.append(userInfo);
+                   }}
+           }
         }
     }
 }
-
 
 //
 let button = document.createElement('button');
@@ -55,7 +67,8 @@ block.setAttribute('class','container');
             userPost.setAttribute('class','itemPost')
 
             let a = document.createElement('a');
-            a.innerText = `${post.id}  ${post.title}`;
+            a.setAttribute('class','postTitle');
+            a.innerHTML = `${post.id}` + '<br>'+  `${post.title}`;
             a.href = 'post-details.html?data=' + JSON.stringify(post);
 
             userPost.appendChild(a);
