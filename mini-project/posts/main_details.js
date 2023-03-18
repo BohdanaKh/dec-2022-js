@@ -8,9 +8,7 @@
 let url = new URL(location.href);
 let json = url.searchParams.get('data');
 let user = JSON.parse(json);
-let container = document.createElement('div');
-container.setAttribute('class','userContainer');
-document.body.appendChild(container);
+let container = document.getElementById('userPosts');
 builder(user);
 
 function builder(object) {
@@ -45,11 +43,7 @@ function builder(object) {
     }
 }
 
-//
-let button = document.createElement('button');
-button.setAttribute('class','button');
-button.innerText = 'post of current user';
-document.body.appendChild(button);
+let button = document.getElementById('button');
 
 let userId = user.id;
 let url1 = new URL('https://jsonplaceholder.typicode.com/users/USER_ID/posts');
@@ -61,7 +55,7 @@ button.onclick =function (){ fetch(newUrl)
     .then(value => value.json())
     .then(posts => {
 let block = document.createElement('div');
-block.setAttribute('class','container');
+block.setAttribute('id','postsDiv');
         for (const post of posts) {
             let userPost = document.createElement('div');
             userPost.setAttribute('class','itemPost')
@@ -69,11 +63,14 @@ block.setAttribute('class','container');
             let a = document.createElement('a');
             a.setAttribute('class','postTitle');
             a.innerHTML = `${post.id}` + '<br>'+  `${post.title}`;
-            a.href = 'post-details.html?data=' + JSON.stringify(post);
+            a.href = '../comments/post-details.html?data=' + JSON.stringify(post);
 
             userPost.appendChild(a);
             block.appendChild(userPost);
         }
         document.body.appendChild(block);
-    })};
+
+    })
+button.disabled = true;
+};
 

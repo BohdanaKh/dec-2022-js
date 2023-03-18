@@ -8,10 +8,7 @@ let url = new URL(location.href);
 let data = url.searchParams.get('data');
 let post = JSON.parse(data);
 
-let postsContainer = document.createElement('div');
-postsContainer.setAttribute('class','container');
-document.body.appendChild(postsContainer);
-
+let postsContainer = document.getElementById('postsContainer');
 
 let postInfo = document.createElement('div');
 postInfo.setAttribute('class','bigBlock');
@@ -21,7 +18,7 @@ let id = document.createElement('div');
 id.setAttribute('id','posttarget2');
 let textBody = document.createElement('div');
 textBody.setAttribute('id','posttarget3');
-title.innerText = `Title ${post.title}`;
+title.innerText = `${post.title}`;
 id.innerText = `Post ID: ${post.id}  User ID: ${post.userId}`;
 textBody.innerText = `${post.body}`;
 postInfo.append(title,id,textBody);
@@ -35,7 +32,11 @@ let url4 = url3.toString().replace('POST_ID', postId);
 let newUrl1 = new URL(url4);
 
 let commentsDiv = document.createElement('div');
-commentsDiv.setAttribute('class','commentsDiv');
+commentsDiv.setAttribute('id','commentsDiv');
+let titleDiv = document.createElement('h4');
+titleDiv.setAttribute('id','titleDiv');
+titleDiv.innerText='COMMENTS';
+commentsDiv.appendChild(titleDiv);
 fetch(newUrl1)
     .then(value => value.json())
     .then(comments => {
@@ -52,7 +53,6 @@ fetch(newUrl1)
         }
     })
 postsContainer.appendChild(commentsDiv);
-
 
 
 
